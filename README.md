@@ -14,4 +14,11 @@ Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Screenshot
+
+Screenshots of the home and details pages.
+
+![Home Screenshot](/src/assets/home_screenshot.png)
+![Details Screenshot](/src/assets/details_screenshot.png)
+
 # Tenisu
