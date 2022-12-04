@@ -1,0 +1,23 @@
+<div class="mainContainer">
+<div class="container">
+  <div class="input input-group mb-3">
+    <input class="search" type="text" placeholder="Rechercher un joueur" [(ngModel)]="searchText">
+  </div>
+  <div class="card w-75"
+    *ngFor="let player of players | appFilter: searchText"  (click)="getDetails(player.id)">
+    <div class="row g-0">
+      <div class="col-md-4" >
+        <img src={{player.picture}} class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{player.firstname}} {{player.lastname}}</h5>
+          <p class="card-text">Rank #{{player.data.rank}}</p> 
+          <p class="card-text">Points {{player.data.points}}</p> 
+          <p class="card-text">Country {{player.country.code}}</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

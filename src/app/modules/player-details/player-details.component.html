@@ -1,0 +1,29 @@
+<div class="card">
+  <!-- <img src={{player.country.picture}}> -->
+  <img src={{player.country.picture}} alt="player" style="width:100%">
+
+    {{player?.country.code}}
+  <img src={{player.picture}}>
+  
+  <div style="display: inline-block;">
+    <!-- <h2 >{{player.firstname}}</h2>
+    <h2>{{player.lastname}}</h2>  -->
+    <h5 class="card-title">{{player.firstname}} {{player.lastname}}</h5>
+
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <!-- <h5 class="card-title">{{player.firstname}} {{player.lastname}}</h5> -->
+      <p class="card-text">Rank #{{player.data.rank}}</p> 
+      <p class="card-text">Points {{player.data.points}}</p> 
+      <p class="card-text">Country {{getCountry()}}</p> 
+      <p class="card-text">Birthday </p> 
+      <p class="card-text">Age {{player?.data.age}}</p> 
+      <p class="card-text">Weight {{player?.data.weight/1000}} kg</p> 
+      <p class="card-text">Height {{player?.data.height}} cm</p> 
+    </div>
+  </div>
+
+</div>
+
+

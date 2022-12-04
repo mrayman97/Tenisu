@@ -1,0 +1,31 @@
+.mainContainer{
+  background: url("../../../../src/assets/tennisBackground.png") no-repeat fixed center;
+}
+
+.container {
+  height: 30%;
+  width: 70%;
+  margin-left: 30px;
+}
+
+.card{
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  max-height: 15rem;
+  z-index: 1;
+}
+
+.input{
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+img{
+  height: 80%;
+  width: 70%;
+  z-index: revert;
+}
+
+
