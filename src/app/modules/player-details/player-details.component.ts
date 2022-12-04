@@ -27,20 +27,16 @@ export class PlayerDetailsComponent implements OnInit {
     this.playerService.getPlayers().subscribe(
       (data:any) => {
         this.players = data.players;
-        console.log("Players :", this.players)
       },
       (err) => console.log(err),
       () => {
         this.player=this.players.find((x: any) => x.id == this.playerid);
-        console.log("Player :",this.player);
       }
-       )
+    )
   }
 
   getCountry(){
-    console.log("country code :",COUNTRIES[0])
     var country:any =COUNTRIES.find((x: any) => x.code == this.player.country.code);
-    console.log("country: ", country)
     return country.name;
   }
 }
