@@ -23,11 +23,10 @@ export class PlayerComponent implements OnInit {
     this.playerService.getPlayers().subscribe(
       (data:any) => {
         this.players = data.players;
-        console.log("Players :", this.players)
       },
       (err) => console.log(err),
       () => {}
-       )
+    )
   }
   getDetails(id:number){
     this.router.navigate(['detail', id]);
